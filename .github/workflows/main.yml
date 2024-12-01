@@ -1,0 +1,13 @@
+name: My First Action
+
+on: 
+  push:
+    branches:
+      - main  # Run this workflow when code is pushed to the "main" branch.
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest  # Use a Linux machine to run tasks.
+    steps:
+      - name: Print a Greeting
+        run: echo "Hello, GitHub Actions!"
